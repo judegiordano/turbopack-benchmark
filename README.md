@@ -1,1 +1,6 @@
-![](./target/criterion/turbo-vs-next-build/report/violin.svg)
+# Turbopack Vs Webpack
+
+## Simple Next.js Benchmarks 
+
+
+![violin report](./violin.svg)
