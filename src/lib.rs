@@ -45,8 +45,8 @@ pub fn builder(dirname: &str, enable_turbo: bool) -> anyhow::Result<Duration> {
     let bytes = cmd.as_bytes();
     let now = std::time::Instant::now();
     // write
-    child.stdin.as_mut().unwrap().write_all(bytes)?;
-    child.wait_with_output()?;
+    child.stdin.as_mut().unwrap().write(bytes)?;
+    child.wait()?;
     let done = now.elapsed();
     Ok(done)
 }
