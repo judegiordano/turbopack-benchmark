@@ -9,9 +9,9 @@ fn shell() -> Command {
 }
 
 pub fn builder(turbo: bool) -> anyhow::Result<Duration> {
+    // idk should these commands be disabling cache?
     let build_cmd = if turbo {
         "npx turbo build"
-        // "npx turbo build --no-cache"
     } else {
         "npx next build"
     };

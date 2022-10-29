@@ -1,4 +1,5 @@
 /target
 twoyay-web
-!/target/criterion/*
 *.txt
+!twoyay-web/turbo.json
+!target/criterion
