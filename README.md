@@ -1,6 +1,6 @@
 # Turbopack Vs Webpack
 
-```json
+```js
 // turbo.json
 {
     "pipeline": {
@@ -16,7 +16,7 @@
 }
 ```
 
-```json
+```js
 // package.json
 {
   "scripts": {
