@@ -1,5 +1,9 @@
 # Turbopack Vs Webpack
 
+```
+cargo bench -- --directory <DIRECTORY>
+```
+
 ## Simple Next.js Benchmarks 
 
 ![violin report](./reports/violin.svg)
