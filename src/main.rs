@@ -2,19 +2,7 @@ use anyhow::Result;
 use clap::Parser;
 use tracing_subscriber::FmtSubscriber;
 
-use turbopack_benchmark::builder;
-
-#[derive(Parser, Debug)]
-#[command(author, version, about, long_about = None)]
-struct Args {
-    /// Next.js Directory Path
-    #[arg(short, long)]
-    directory: String,
-
-    /// Enable building with turbopack
-    #[arg(short, long, default_value_t = false)]
-    turbo: bool,
-}
+use turbopack_benchmark::{builder, Args};
 
 fn main() -> Result<()> {
     let lvl = tracing::Level::INFO;

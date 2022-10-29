@@ -1,8 +1,21 @@
+use clap::Parser;
 use std::{
     io::Write,
     process::{Command, Stdio},
     time::Duration,
 };
+
+#[derive(Parser, Debug)]
+#[command(author, version, about, long_about = None)]
+pub struct Args {
+    /// Next.js Directory Path
+    #[arg(short, long)]
+    pub directory: String,
+
+    /// Enable building with turbopack
+    #[arg(short, long, default_value_t = false)]
+    pub turbo: bool,
+}
 
 fn shell() -> Command {
     if cfg!(target_os = "windows") {
