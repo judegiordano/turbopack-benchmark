@@ -1,4 +1,4 @@
 /target
 twoyay-web
-
+!/target/criterion/*
 *.txt
